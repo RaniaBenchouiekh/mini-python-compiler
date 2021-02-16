@@ -1,0 +1,23 @@
+int M,S,Y,Z,D,X
+if(Y<Z):
+    X =Y
+    Z=3
+    if(D>3):
+        Z=3
+    elif(Z==3):
+        if(Z>19):
+            Y=3
+        else:
+            X=3
+            
+    else:
+        X=3
+    
+elif(Z>4):
+    Z=X
+elif(Z>3):
+    Z=X
+else:
+    X=3
+
+X=3
