@@ -19,7 +19,7 @@ The Symbol Table is created during the lexical analysis phase. It must group tog
 #### Code Optimization
 
 We consider four types of successive transformations applied to the intermediate code.
-- Copy spread
+- **Copy spread**
 
 For example, replacing :
 ``` bash
@@ -32,7 +32,7 @@ t1 = t2
 t3 = t4 * t2
 ```
 
-- Expression spread
+- **Expression spread**
 
 For example, replacing :
 ``` bash
@@ -45,7 +45,7 @@ t1 = exp
 t2 = t3 * expr
 ```
 
-- Elimination of redundant expressions
+- **Elimination of redundant expressions**
 
 For example, replacing :
 ``` bash
@@ -58,7 +58,7 @@ t1 = 4 * j
 t2 = t1
 ```
 
-- Algebraic simplification
+- **Algebraic simplification**
 
 For example, replacing :
 ``` bash
@@ -69,7 +69,17 @@ with :
 t1
 ```
 
-- Elimination of unnecessary code
+- **Elimination of unnecessary code**
+
+For example, replacing :
+``` bash
+t1 = 1
+t1 = 1
+```
+with : 
+``` bash
+t1 = 1
+```
 
 #### Generating Intermediate Code 
 
@@ -89,7 +99,7 @@ The generated quadruplets go through the optimization phase.
 
 #### Generating Machine Code
 
-The machine code is generated in Assembly Language.
+The machine code is generated in ***Assembly Language***.
 
 #### Error Managment
 
